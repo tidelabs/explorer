@@ -17,7 +17,7 @@ COPY . .
 RUN yarn && NODE_ENV=production yarn build:www
 
 # ===========================================================
-FROM nginx:stable-alpine
+FROM nginx:mainline-alpine
 
 # The following is mainly for doc purpose to show which ENV is supported
 ENV WS_URL=
